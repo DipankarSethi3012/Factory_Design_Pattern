@@ -1,3 +1,5 @@
+package Logistics;
+
 public class LogisticsFactory {
 
     private LogisticsFactory() {}
@@ -12,10 +14,10 @@ public class LogisticsFactory {
 
     public static Logistics getLogistics(String mode) {
 
-        if(mode.equalsIgnoreCase("Air")) {
+        if(mode.equalsIgnoreCase("Logistics.Air")) {
             return new Air();
         }
-        else if (mode.equalsIgnoreCase("Road")) {
+        else if (mode.equalsIgnoreCase("Logistics.Road")) {
             return new Road();
         }
 
